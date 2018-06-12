@@ -1,0 +1,521 @@
+@charset "uft-8";
+/* CSS style */
+
+	body{
+		margin:0px;
+		padding:0px;
+		
+	}
+	* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: 'segoe ui';
+}
+
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: #4d4d4d;
+  position: relative;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav , .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block !important;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+	
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+	   z-index: 99999;
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+	opacity:10;
+	text-align:center;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+	border-bottom: 1px dashed white;
+	
+  }
+  .nav > #nav-check:not(:checked) + .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked + .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+
+/* =========================== NAVBAR Section ==============================*/
+	
+
+	@media screen and (max-width:768px){
+		nav{
+			visibility:hidden;
+		}
+		
+		
+		.dropdown{
+			visibility:visible;
+		}
+	
+	
+	.dropbtn {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+	padding-right:1800%;
+	position:fixed;
+	top:0px;
+	font-family:Georgia;
+	
+}
+
+	.dropdown {
+		position: relative;
+		display: inline-block;
+			
+	}
+
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: black;
+		min-width: 260px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+		top:-10px;
+		left:0px;
+
+		}
+
+	.dropdown-content a{
+		color: white;
+		padding: 12px 30px;
+		text-decoration: none;
+		display:block;
+		font-family:Helvetica;
+		font-weight:bold;
+		
+	}
+		
+	.dropdown-content a:hover {background-color: gray}
+
+	.dropdown:hover .dropdown-content {
+		display: block;
+		position:fixed;
+		top:3px;
+		
+	}
+
+	.dropdown:hover .dropbtn {
+		background-color: black;
+		
+	}
+	
+		
+	}		
+/* ==================================== HOME Section ========================= */	
+	#hompage{
+		width:100%;
+		
+	}
+	
+	.fade{	  
+		
+		height: 453px;
+		border: 0px solid white;
+		position:absolute;
+		width:102%;
+		top:155%;
+		background-color:black;
+		opacity:.7;
+			
+	}
+	
+	.hometext p{
+		font-size:18px;
+		color:white;
+		position: absolute;
+		top:35%;
+		font-weight:lighter;
+		font-family:Verdana;
+		margin-left:40%;
+		margin-right:40%;
+		opacity:.5;
+	}
+	
+	
+	#photos{
+		width:100%;
+		display:block;
+	}
+
+	
+	.learn{
+		position:absolute;
+		font-size:500%;
+		top:8%;
+		color:black;
+		right:28%;
+		-webkit-box-reflect: below;
+		-webkit-box-reflect: below -30px;
+		   -webkit-box-reflect: below -30px -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(55%, transparent), to(rgba(255, 255, 255, 0.4)));
+		/* background: -webkit-linear-gradient(#ffffff, #d3bfa5);
+		 -webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;*/
+	
+	}
+	.code{
+		position:absolute;
+		font-size:500%;
+		top:25%;
+		right:13%;
+		color:black;
+		-webkit-box-reflect: below;
+		-webkit-box-reflect: below -30px;
+		  -webkit-box-reflect: below -30px -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(55%, transparent), to(rgba(255, 255, 255, 0.4)));
+		
+		/* background: -webkit-linear-gradient(#ffffff, #d3bfa5);
+		 -webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;*/
+	
+	}
+	.explore{
+		position:absolute;
+		font-size:500%;
+		top:45%;
+		right:5%;
+		color:black;
+		-webkit-box-reflect: below;
+		-webkit-box-reflect: below -30px;
+		   -webkit-box-reflect: below -30px -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(55%, transparent), to(rgba(255, 255, 255, 0.4)));
+		 /* background: -webkit-linear-gradient(#ffffff, #d3bfa5);
+		 -webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;*/
+	}
+	.pic1{
+		position:absolute;
+		top:20%;
+		left:10%;
+		-webkit-box-reflect: below;
+		-webkit-box-reflect: below 1px;
+		   -webkit-box-reflect: below 1px -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(50%, transparent), to(rgba(255, 255, 255, 0.4)));
+		height:30%;
+		width:31%;
+	}
+	.pic2{
+		position:absolute;
+		top:45%;
+		left:2%;
+		-webkit-box-reflect: below;
+		-webkit-box-reflect: below 1px;
+		   -webkit-box-reflect: below 1px -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(60%, transparent), to(rgba(255, 255, 255, 0.4)));
+		height:25%;
+		width:20%;
+		}
+	.pic3{
+		position:absolute;
+		top:45%;
+		left:33%;
+		-webkit-box-reflect: below;
+		-webkit-box-reflect: below 3px;
+		   -webkit-box-reflect: below 3px -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(50%, transparent), to(rgba(255, 255, 255, 0.4)));
+		height:25%;
+		width:20%;
+	}
+	.pic4{
+		position:absolute;
+		top:68%;
+		left:22.5%;
+		-webkit-box-reflect: below;
+		-webkit-box-reflect: below 3px;
+		   -webkit-box-reflect: below 3px -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(50%, transparent), to(rgba(255, 255, 255, 0.4)));
+		 height:15%;
+		width:10%;
+	}
+	
+	.pic5{
+		position:absolute;
+		top:79%;
+		left:37%;
+		-webkit-box-reflect: below;
+		-webkit-box-reflect: below 3px;
+		   -webkit-box-reflect: below 3px -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(50%, transparent), to(rgba(255, 255, 255, 0.4)));
+		 height:10%;
+		width:9%;
+	}
+	.pic6{
+		position:absolute;
+		top:79%;
+		left:9%;
+		-webkit-box-reflect: below;
+		-webkit-box-reflect: below 3px;
+		   -webkit-box-reflect: below 3px -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(50%, transparent), to(rgba(255, 255, 255, 0.4)));
+		 height:10%;
+		width:9%;
+	}
+	
+	.pic1:hover, .pic2:hover, .pic3:hover, .pic4:hover, .pic5:hover, .pic6:hover{
+		border:1px solid white;
+		opacity:.8;
+			
+			}
+	.animate, .images{
+		visibility:visible;
+	}
+	.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: black;
+	color: white;
+	text-align: center;
+	height:5%;
+				
+			}
+	
+	.footer a{
+		color:white;
+		font-size:13px;
+		font-family:Helvetica;
+		padding:5%;
+		text-align:center;
+		padding-top:10%;
+	
+	
+	}	
+	
+	#footer a:hover{
+		font-size:15px;
+		font-family:helvetica;
+		text-align:center;
+	
+	}	
+/*======================================== Body Link Section ============================ */	
+	@media screen and (max-width: 600px){
+	html, body {
+	width: auto !important;
+	overflow-x: hidden !important;
+	padding-right:5px;
+}
+.images{
+	left:10%;
+	position:absolute;
+}
+		
+	.learn{
+		font-weight:bold;
+		font-size:250%;
+		left:10%;
+		top:8%;
+		-webkit-box-reflect: below;
+		-webkit-box-reflect: below -10px;
+		   -webkit-box-reflect: below -10px -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(50%, transparent), to(rgba(255, 255, 255, 0.4)));
+	}
+	.code{
+		font-weight:bold;
+		font-size:250%;
+		left:25%;
+		top:15%;
+		-webkit-box-reflect: below;
+		-webkit-box-reflect: below -10px;
+		   -webkit-box-reflect: below -10px -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(50%, transparent), to(rgba(255, 255, 255, 0.4)));
+		
+	}
+	.explore{
+		font-weight:bold;
+		font-size:250%;
+		left:40%;
+		top:24%;
+		-webkit-box-reflect: below;
+		-webkit-box-reflect: below -10px;
+		   -webkit-box-reflect: below -10px -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(50%, transparent), to(rgba(255, 255, 255, 0.4)));
+	}
+	.pic1{
+		
+		top:40%;
+		left:18%;
+		border-radius:5px;
+		height:18%;
+		width:55%;
+	}
+	.pic2{
+		top:56%;
+		left:53%;
+		border-radius:5px;
+		height:15%;
+		width:30%;
+	}
+	.pic3{
+		top:56%;
+		left:8%;
+		border-radius:5px;
+		height:15%;
+		width:30%;	
+	}
+	.pic4{
+		top:65%;
+		left:28%;
+		border-radius:5px;
+		height:15%;
+		width:35%;	
+	}
+	.pic5{
+		top:75%;
+		left:13%;
+		border-radius:5px;
+		height:8%;
+		width:10%;	
+	}
+	.pic6{
+		top:75%;
+		left:68%;
+		border-radius:5px;
+		height:8%;
+		width:10%;	
+	}
+	.pic1:hover{
+		
+		top:40%;
+		left:20%;
+		border-radius:5px;
+		height:18%;
+		width:55%;
+	}
+	.pic2:hover{
+		top:56%;
+		left:56%;
+		border-radius:5px;
+		height:15%;
+		width:30%;
+	}
+	.pic3:hover{
+		top:56%;
+		left:10%;
+		border-radius:5px;
+		height:15%;
+		width:30%;
+		
+	}
+	.pic4:hover{
+		top:65%;
+		left:30%;
+		border-radius:5px;
+		height:20%;
+		width:40%;
+		
+		
+	}
+	.text-center{
+	font-family:Time New ROman;
+	font-weight:bolder;
+	
+}
+		
+
+img{
+	border-radius:10px;
+}
+	
+
+/* ========================== FOOTER Section =========================== */	
+	
+	.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: black;
+	color: white;
+	text-align: center;
+	height:5%;
+				
+	}
+	
+	.footer a{
+		color:white;
+		font-size:13px;
+		font-family:Helvetica;
+		padding:5%;
+		text-align:center;
+	
+	
+	}	
+	
+	#footer a:hover{
+		font-size:15px;
+		font-family:helvetica;
+		text-align:center;
+	
+	}	
+	}
+	
